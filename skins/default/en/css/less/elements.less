@@ -1,0 +1,21 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Elements
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+.center-full-width() {
+  margin-left: -1 * @center-padding-left;
+  width: ~"calc(100% + " @center-padding-left ~" + " @center-padding-right ~")";
+}
+
+.vertical-middle-box() {
+  .flex-display();
+  .flex-direction(column);
+  .justify-content(center);
+}

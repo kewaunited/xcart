@@ -1,0 +1,79 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Sitemap styles
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+@import "../../../css/initialize.less";
+
+.sitemap-box {
+  padding-top: 20px;
+
+  ul, li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    line-height: normal;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .item-box {
+    display: inline-block;
+    line-height: normal;
+
+    .item {
+      line-height: normal;
+    }
+  }
+
+  ul.level-0 > li {
+    padding-bottom: 36px;
+    .clearfix;
+
+    & > .item-box {
+      display: block;
+      border-bottom: 1px solid #ddd;
+
+      .item {
+        font-size: 20px;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  ul.level-1 {
+    clear: both;
+    padding-top: 10px;
+
+    & > li {
+      float: left;
+      width: 25%;
+
+      & > .item-box .item {
+        line-height: 20px;
+      }
+    }
+  }
+
+  ul.level-2 {
+    padding: 2px 0px 2px 10px;
+
+    & > li > .item-box .item {
+      font-size: 12px;
+      font-weight: lighter;
+    }
+  }
+
+}

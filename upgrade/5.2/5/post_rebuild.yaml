@@ -1,0 +1,24 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# @author    Qualiteam software Ltd <info@x-cart.com>
+# @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+# @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+# @link      http://www.x-cart.com/
+
+XLite\Model\Config:
+  - { name: anonymous_address_type, category: Shipping, type: '\XLite\View\FormField\Select\AddressType', value: R, orderby: 100, translations: [{ code: en, option_name: 'Address type' }] }
+  - { name: default_prod_display_mode, category: General, type: 'XLite\View\FormField\Select\DefaultDisplayModeForProductsList', orderby: 250, value: 'grid', translations: [{ code: en, option_name: 'Default display mode for products list' }] }
+XLite\Model\LanguageLabel:
+  - { name: 'Payment methods appearance description', translations: [{ code: en, label: 'Here you can provide titles and descriptions for your payment methods and set the order in which they should appear on the storefront. In the <strong>Title</strong> column you can provide a name for each of your payment methods (up to 256 characters) - as it should be seen by customers; in the <strong>Description</strong> column - a short description of the payment method that should appear right below its title (also up to 256 characters).<br/>The list below shows only the payment methods that have been added.' }] }
+XLite\Model\Language:
+  - { code: gb, code3: gbr, translations: [{ code: en, name: British }], module: 'XC\GbTranslation' }
+XLite\Model\Role\Permission:
+  - { code: manage admins, section: Users, translations: [{ code: en, name: Manage administrators }] }
+XLite\Model\LanguageLabel:
+  - { name: "Manage admins", translations: [{ code: en, label: "Manage administrators" }] }
+  - { name: 'Enable clean URL', translations: [{ code: en, label: 'Enable clean URL' }] }
+  - { name: 'Error code explanation:', translations: [{ code: en, label: 'Error code explanation' }] }
+  - { name: 'More information about clean urls in X-Cart is available in ', translations: [{ code: en, label: 'More information about clean urls in X-Cart is available in {{url}}' }] }
+  - { name: 'Clean_urls_error_message', translations: [{ code: en, label: 'We made a test request to <a href="{{url}}">{{url}}</a> URL and got the following result. <br>It means that your SEO-friendly URLs may not work properly after enabling.' }] }

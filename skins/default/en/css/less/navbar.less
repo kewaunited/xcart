@@ -1,0 +1,24 @@
+.navbar-nav {
+    font-family: @headings-font-family;
+}
+
+.navbar-nav > li {
+    margin: 0;
+    background-image: none;
+    padding-left: 0;
+    &.first > a{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+}
+
+.navbar-nav > li > a {
+    text-decoration: none;
+	font-size: @navbar-inverse-font-size;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-toggle {
+    height: auto;
+}

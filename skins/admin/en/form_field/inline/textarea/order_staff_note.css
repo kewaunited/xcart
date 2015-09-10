@@ -1,0 +1,77 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Order staff note styles
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+.inline-order-staff-note .field {
+  position: relative;
+}
+
+.inline-order-staff-note .field .arrow {
+  background-color: #fffbe5;
+  position: absolute;
+  top: 10px;
+  left: -3px;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #e4deaa;
+  border-left: 1px solid #e4deaa;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.inline-order-staff-note .field {
+  padding: 23px 20px;
+  padding-bottom: 14px;
+  background-color: #fffbe5;
+  border: 1px solid #e4deaa;
+  position: relative;
+  z-index: 100;
+}
+
+.inline-order-staff-note .field .close {
+  color: #c5bf8f;
+  text-decoration: none;
+  position: absolute;
+  top: 1px;
+  right: 6px;
+  font-size: 22px;
+  opacity: 1;
+}
+
+.inline-order-staff-note .field .table-value {
+  padding-top: 3px;
+  padding-bottom: 0px;
+  float: none;
+}
+
+.inline-order-staff-note .field strong {
+  display: block;
+}
+
+.inline-order-staff-note .field div.table-value textarea {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  margin: 0px;
+  width: 310px;
+  height: 60px;
+  font-size: 10px;
+  padding: 13px 10px;
+}
+
+.inline-order-staff-note .field .buttons {
+  text-align: center;
+  margin-top: 0px;
+}
+
+

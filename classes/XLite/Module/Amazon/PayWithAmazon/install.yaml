@@ -1,0 +1,61 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+
+XLite\Model\Config:
+  - name: amazon_pa_sid
+    category: Amazon\PayWithAmazon
+    type: XLite\Module\Amazon\PayWithAmazon\View\FormField\Input\SellerID
+    orderby: 5
+    value: ''
+    translations:
+      - code: en
+        option_name: 'Amazon Seller ID'
+  - name: amazon_pa_mode
+    category: Amazon\PayWithAmazon
+    type: XLite\Module\Amazon\PayWithAmazon\View\FormField\Select\OpMode
+    orderby: 10
+    value: 'test'
+    translations:
+      - code: en
+        option_name: Operation mode
+  - name: amazon_pa_access_key
+    category: Amazon\PayWithAmazon
+    type: text
+    orderby: 15
+    value: ''
+    translations:
+      - code: en
+        option_name: Access Key ID
+  - name: amazon_pa_secret_key
+    category: Amazon\PayWithAmazon
+    type: text
+    orderby: 20
+    value: ''
+    translations:
+      - code: en
+        option_name: Secret Access Key
+  - name: amazon_pa_currency
+    category: Amazon\PayWithAmazon
+    type: XLite\Module\Amazon\PayWithAmazon\View\FormField\Select\Currency
+    orderby: 30
+    value: 'USD'
+    translations:
+      - code: en
+        option_name: Country of Merchant account
+  - name: amazon_pa_capture_mode
+    category: Amazon\PayWithAmazon
+    type: XLite\Module\Amazon\PayWithAmazon\View\FormField\Select\CaptureMode
+    orderby: 40
+    value: 'C'
+    translations:
+      - code: en
+        option_name: Capture mode
+  - name: amazon_pa_sync_mode
+    category: Amazon\PayWithAmazon
+    type: XLite\Module\Amazon\PayWithAmazon\View\FormField\Select\SyncMode
+    orderby: 45
+    value: 'S'
+    translations:
+      - code: en
+        option_name: Type of authorization request
+

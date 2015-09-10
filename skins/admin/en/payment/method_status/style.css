@@ -1,0 +1,27 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Payment methods status
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+.payment-status .alert,
+.payment-status .alert span
+{
+  font-size: 14px;
+}
+
+.payment-status .alert {
+  display: inline-block;
+}
+
+.payment-status .alert.alert-warning span {
+  color: #8a6d3b;
+}
+
+.payment-status .alert.alert-success span {
+  color: #3c763d;
+}

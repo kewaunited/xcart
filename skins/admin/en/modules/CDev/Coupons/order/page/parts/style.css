@@ -1,0 +1,89 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Order info styles
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+.order-info .totals .coupon-row {
+}
+
+.order-info .totals .coupon-row .title {
+  display: block;
+  padding-right: 25px;
+}
+
+.order-info .totals .coupon-row .inline-hidden {
+  display: none;
+}
+
+.order-info .totals .coupon-row ul li {
+  text-align: right;
+  line-height: 18px;
+  padding-bottom: 2px;
+}
+
+.order-info .totals .coupon-row ul li.remove-mark {
+  opacity: .4;
+}
+
+.order-info .totals .coupon-row ul li span {
+  font-size: 14px;
+}
+
+.order-info .totals .coupon-row ul li .remove {
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 7px;
+}
+
+.order-info .totals .coupon-row ul li .remove i {
+  color: #526aa8;
+}
+
+.order-info .totals .coupon-row .add-new {
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+
+.order-info .totals .coupon-row .add-new a.add {
+  text-decoration: none;
+  border-bottom: 1px dashed #1a509a;
+  font-size: 12px;
+  line-height: 12px;
+  color: #2a6496;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.order-info .totals .coupon-row .add-new .box {
+  display: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #eff8ff;
+  border: 1px solid #dfecf5;
+  padding: 8px 6px;
+  margin-top: 7px;
+  margin-right: 4px;
+}
+
+.order-info .totals .coupon-row .add-new.expanded .box {
+  display: block;
+}
+
+.order-info .totals .coupon-row .add-new .box > * {
+  display: inline-block;
+}
+
+.order-info .totals .coupon-row .add-new .box input {
+  width: 87px;
+}
+
+.order-info .totals .coupon-row .add-new .box button {
+  margin-left: 6px;
+}

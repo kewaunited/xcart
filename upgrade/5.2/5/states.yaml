@@ -1,0 +1,573 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# New states
+#
+# @author    Qualiteam software Ltd <info@x-cart.com>
+# @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+# @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+# @link      http://www.x-cart.com/
+
+XLite\Model\Country:
+  directives: { addModel: 'XLite\Model\State' }
+  - code: AR
+    states:
+      - { state: Buenos Aires, code: B }
+      - { state: Catamarca, code: K }
+      - { state: Chaco, code: H }
+      - { state: Chubut, code: U }
+      - { state: Ciudad de Buenos Aires, code: C }
+      - { state: Córdoba, code: X }
+      - { state: Corrientes, code: W }
+      - { state: Entre Ríos, code: E }
+      - { state: Formosa, code: P }
+      - { state: Jujuy, code: Y }
+      - { state: La Pampa, code: L }
+      - { state: La Rioja, code: F }
+      - { state: Mendoza, code: M }
+      - { state: Misiones, code: N }
+      - { state: Neuquén, code: Q }
+      - { state: Río Negro, code: R }
+      - { state: Salta, code: A }
+      - { state: San Juan, code: J }
+      - { state: San Luis, code: D }
+      - { state: Santa Cruz, code: Z }
+      - { state: Santa Fe, code: S }
+      - { state: Santiago del Estero, code: G }
+      - { state: Tierra del Fuego, code: V }
+      - { state: Tucumán, code: T }
+  - code: BR
+    states:
+      - { state: Distrito Federal, code: DF }
+      - { state: Acre, code: AC }
+      - { state: Alagoas, code: AL }
+      - { state: Amapá, code: AP }
+      - { state: Amazonas, code: AM }
+      - { state: Bahia, code: BA }
+      - { state: Ceará, code: CE }
+      - { state: Espírito Santo, code: ES }
+      - { state: Goiás, code: GO }
+      - { state: Maranhão, code: MA }
+      - { state: Mato Grosso, code: MT }
+      - { state: Mato Grosso do Sul, code: MS }
+      - { state: Minas Gerais, code: MG }
+      - { state: Pará, code: PA }
+      - { state: Paraíba, code: PB }
+      - { state: Paraná, code: PR }
+      - { state: Pernambuco, code: PE }
+      - { state: Piauí, code: PI }
+      - { state: Rio de Janeiro, code: RJ }
+      - { state: Rio Grande do Norte, code: RN }
+      - { state: Rio Grande do Sul, code: RS }
+      - { state: Rondônia, code: RO }
+      - { state: Roraima, code: RR }
+      - { state: Santa Catarina, code: SC }
+      - { state: São Paulo, code: SP }
+      - { state: Sergipe, code: SE }
+      - { state: Tocantins, code: TO }
+  - code: CN
+    states:
+      - { state: Anhui, code: '34' }
+      - { state: Beijing, code: '11' }
+      - { state: Chongqing, code: '50' }
+      - { state: Fujian, code: '35' }
+      - { state: Gansu, code: '62' }
+      - { state: Guangdong, code: '44' }
+      - { state: Guangxi, code: '45' }
+      - { state: Guizhou, code: '52' }
+      - { state: Hainan, code: '46' }
+      - { state: Hebei, code: '13' }
+      - { state: Heilongjiang, code: '23' }
+      - { state: Henan, code: '41' }
+      - { state: Hong Kong, code: '91' }
+      - { state: Hubei, code: '42' }
+      - { state: Hunan, code: '43' }
+      - { state: Jiangsu, code: '32' }
+      - { state: Jiangxi, code: '36' }
+      - { state: Jilin, code: '22' }
+      - { state: Liaoning, code: '21' }
+      - { state: Macao, code: '92' }
+      - { state: Nei Mongol, code: '15' }
+      - { state: Ningxia, code: '64' }
+      - { state: Qinghai, code: '63' }
+      - { state: Shaanxi, code: '61' }
+      - { state: Shandong, code: '37' }
+      - { state: Shanghai, code: '31' }
+      - { state: Shanxi, code: '14' }
+      - { state: Sichuan, code: '51' }
+      - { state: Taiwan, code: '71' }
+      - { state: Tianjin, code: '12' }
+      - { state: Xinjiang, code: '65' }
+      - { state: Xizang, code: '54' }
+      - { state: Yunnan, code: '53' }
+      - { state: Zhejiang, code: '33' }
+  - code: IN
+    states:
+      - { state: Andaman and Nicobar Islands, code: AN }
+      - { state: Andhra Pradesh, code: AP }
+      - { state: Arunachal Pradesh, code: AR }
+      - { state: Assam, code: AS }
+      - { state: Bihar, code: BR }
+      - { state: Chandigarh, code: CH }
+      - { state: Chhattisgar, code: CT }
+      - { state: Dadra and Nagar Haveli, code: DN }
+      - { state: Daman and Diu, code: DD }
+      - { state: Delhi, code: DL }
+      - { state: Goa, code: GA }
+      - { state: Gujarat, code: GJ }
+      - { state: Haryana, code: HR }
+      - { state: Himachal Pradesh, code: HP }
+      - { state: Jammu and Kashmir, code: JK }
+      - { state: Jharkhand, code: JH }
+      - { state: Karnataka, code: KA }
+      - { state: Kerala, code: KL }
+      - { state: Lakshadweep, code: LD }
+      - { state: Madhya Pradesh, code: MP }
+      - { state: Maharashtra, code: MH }
+      - { state: Manipur, code: MN }
+      - { state: Meghalaya, code: ML }
+      - { state: Mizoram, code: MZ }
+      - { state: Nagaland, code: NL }
+      - { state: Odish, code: OR }
+      - { state: Puducherry, code: PY }
+      - { state: Punjab, code: PB }
+      - { state: Rajasthan, code: RJ }
+      - { state: Sikkim, code: SK }
+      - { state: Tamil Nadu, code: TN }
+      - { state: Telangan, code: TG }
+      - { state: Tripura, code: TR }
+      - { state: Uttarakhan, code: UT }
+      - { state: Uttar Pradesh, code: UP }
+      - { state: West Bengal, code: WB }
+  - code: ID
+    states:
+      - { state: Aceh, code: AC }
+      - { state: Bali, code: BA }
+      - { state: Bangka–Belitung Islands, code: BB }
+      - { state: Banten, code: BT }
+      - { state: Bengkulu, code: BE }
+      - { state: Central Java, code: JT }
+      - { state: Central Kalimantan, code: KT }
+      - { state: Central Sulawesi, code: ST }
+      - { state: East Java, code: JI }
+      - { state: East Kalimantan, code: KI }
+      - { state: East Nusa Tenggara, code: NT }
+      - { state: Gorontalo, code: GO }
+      - { state: Jakarta, code: JK }
+      - { state: Jambi, code: JA }
+      - { state: Lampung, code: LA }
+      - { state: Maluku, code: MA }
+      - { state: North Kalimantan, code: KU }
+      - { state: North Maluku, code: MU }
+      - { state: North Sulawesi, code: SA }
+      - { state: North Sumatra, code: SU }
+      - { state: Papua, code: PA }
+      - { state: Riau, code: RI }
+      - { state: Riau Islands, code: KR }
+      - { state: South Kalimantan, code: KS }
+      - { state: South Sulawesi, code: SN }
+      - { state: South Sumatra, code: SS }
+      - { state: Southeast Sulawesi, code: SG }
+      - { state: West Java, code: JB }
+      - { state: West Kalimantan, code: KB }
+      - { state: West Nusa Tenggara, code: NB }
+      - { state: West Papua, code: PB }
+      - { state: West Sulawesi, code: SR }
+      - { state: West Sumatra, code: SB }
+      - { state: Yogyakarta, code: YO }
+  - code: JP
+    states:
+      - { state: Aichi, code: '23' }
+      - { state: Akita, code: '05' }
+      - { state: Aomori, code: '02' }
+      - { state: Chiba, code: '12' }
+      - { state: Ehime, code: '38' }
+      - { state: Fukui, code: '18' }
+      - { state: Fukuoka, code: '40' }
+      - { state: Fukushima, code: '07' }
+      - { state: Gifu, code: '21' }
+      - { state: Gumma, code: '10' }
+      - { state: Hiroshima, code: '34' }
+      - { state: Hokkaido, code: '01' }
+      - { state: Hyogo, code: '28' }
+      - { state: Ibaraki, code: '08' }
+      - { state: Ishikawa, code: '17' }
+      - { state: Iwate, code: '03' }
+      - { state: Kagawa, code: '37' }
+      - { state: Kagoshima, code: '46' }
+      - { state: Kanagawa, code: '14' }
+      - { state: Kochi, code: '39' }
+      - { state: Kumamoto, code: '43' }
+      - { state: Kyoto, code: '26' }
+      - { state: Mie, code: '24' }
+      - { state: Miyagi, code: '04' }
+      - { state: Miyazaki, code: '45' }
+      - { state: Nagano, code: '20' }
+      - { state: Nagasaki, code: '42' }
+      - { state: Nara, code: '29' }
+      - { state: Niigata, code: '15' }
+      - { state: Oita, code: '44' }
+      - { state: Okayama, code: '33' }
+      - { state: Okinawa, code: '47' }
+      - { state: Osaka, code: '27' }
+      - { state: Saga, code: '41' }
+      - { state: Saitama, code: '11' }
+      - { state: Shiga, code: '25' }
+      - { state: Shimane, code: '32' }
+      - { state: Shizuoka, code: '22' }
+      - { state: Tochigi, code: '09' }
+      - { state: Tokushima, code: '36' }
+      - { state: Tokyo, code: '13' }
+      - { state: Tottori, code: '31' }
+      - { state: Toyama, code: '16' }
+      - { state: Wakayama, code: '30' }
+      - { state: Yamagata, code: '06' }
+      - { state: Yamaguchi, code: '35' }
+      - { state: Yamanashi, code: '19' }
+  - code: MX
+    states:
+      - { state:  Aguascalientes, code: AGU }
+      - { state:  Baja California, code: BCN }
+      - { state:  Baja California Sur, code: BCS }
+      - { state:  Campeche, code: CAM }
+      - { state:  Coahuila, code: COA }
+      - { state:  Colima, code: COL }
+      - { state:  Chiapas, code: CHP }
+      - { state:  Chihuahua, code: CHH }
+      - { state:  Distrito Federal, code: DIF }
+      - { state:  Durango, code: DUR }
+      - { state:  Guanajuato, code: GUA }
+      - { state:  Guerrero, code: GRO }
+      - { state:  Hidalgo, code: HID }
+      - { state:  Jalisco, code: JAL }
+      - { state:  México, code: MEX }
+      - { state:  Michoacán, code: MIC }
+      - { state:  Morelos, code: MOR }
+      - { state:  Nayarit, code: NAY }
+      - { state:  Nuevo León, code: NLE }
+      - { state:  Oaxaca, code: OAX }
+      - { state:  Puebla, code: PUE }
+      - { state:  Querétaro, code: QUE }
+      - { state:  Quintana Roo, code: ROO }
+      - { state:  San Luis Potosí, code: SLP }
+      - { state:  Sinaloa, code: SIN }
+      - { state:  Sonora, code: SON }
+      - { state:  Tabasco, code: TAB }
+      - { state:  Tamaulipas, code: TAM }
+      - { state:  Tlaxcala, code: TLA }
+      - { state:  Veracruz, code: VER }
+      - { state:  Yucatán, code: YUC }
+      - { state:  Zacatecas, code: ZAC }
+  - code: TH
+    states:
+      - { state: Amnat Charoen, code: 37 }
+      - { state: Ang Thong, code: 15 }
+      - { state: Bueng Kan, code: 38 }
+      - { state: Buri Ram, code: 31 }
+      - { state: Chachoengsao, code: 24 }
+      - { state: Chai Nat, code: 18 }
+      - { state: Chaiyaphum, code: 36 }
+      - { state: Chanthaburi, code: 22 }
+      - { state: Chiang Mai, code: 50 }
+      - { state: Chiang Rai, code: 57 }
+      - { state: Chon Buri, code: 20 }
+      - { state: Chumphon, code: 86 }
+      - { state: Kalasin, code: 46 }
+      - { state: Kamphaeng Phet, code: 62 }
+      - { state: Kanchanaburi, code: 71 }
+      - { state: Khon Kaen, code: 40 }
+      - { state: Krabi, code: 81 }
+      - { state: Krung Thep Maha Nakhon (Bangkok), code: 10 }
+      - { state: Lampang, code: 52 }
+      - { state: Lamphun, code: 51 }
+      - { state: Loei, code: 42 }
+      - { state: Lop Buri, code: 16 }
+      - { state: Mae Hong Son, code: 58 }
+      - { state: Maha Sarakham, code: 44 }
+      - { state: Mukdahan, code: 49 }
+      - { state: Nakhon Nayok, code: 26 }
+      - { state: Nakhon Pathom, code: 73 }
+      - { state: Nakhon Phanom, code: 48 }
+      - { state: Nakhon Ratchasima, code: 30 }
+      - { state: Nakhon Sawan, code: 60 }
+      - { state: Nakhon Si Thammarat, code: 80 }
+      - { state: Nan, code: 55 }
+      - { state: Narathiwat, code: 96 }
+      - { state: Nong Bua Lam Phu, code: 39 }
+      - { state: Nong Khai, code: 43 }
+      - { state: Nonthaburi, code: 12 }
+      - { state: Pathum Thani, code: 13 }
+      - { state: Pattani, code: 94 }
+      - { state: Phangnga, code: 82 }
+      - { state: Phatthalung, code: 93 }
+      - { state: Phatthaya, code: S }
+      - { state: Phayao, code: 56 }
+      - { state: Phetchabun, code: 67 }
+      - { state: Phetchaburi, code: 76 }
+      - { state: Phichit, code: 66 }
+      - { state: Phitsanulok, code: 65 }
+      - { state: Phrae, code: 54 }
+      - { state: Phra Nakhon Si Ayutthaya, code: 14 }
+      - { state: Phuket, code: 83 }
+      - { state: Prachin Buri, code: 25 }
+      - { state: Prachuap Khiri Khan, code: 77 }
+      - { state: Ranong, code: 85 }
+      - { state: Ratchaburi, code: 70 }
+      - { state: Rayong, code: 21 }
+      - { state: Roi Et, code: 45 }
+      - { state: Sa Kaeo, code: 27 }
+      - { state: Sakon Nakhon, code: 47 }
+      - { state: Samut Prakan, code: 11 }
+      - { state: Samut Sakhon, code: 74 }
+      - { state: Samut Songkhram, code: 75 }
+      - { state: Saraburi, code: 19 }
+      - { state: Satun, code: 91 }
+      - { state: Sing Buri, code: 17 }
+      - { state: Si Sa Ket, code: 33 }
+      - { state: Songkhla, code: 90 }
+      - { state: Sukhothai, code: 64 }
+      - { state: Suphan Buri, code: 72 }
+      - { state: Surat Thani, code: 84 }
+      - { state: Surin, code: 32 }
+      - { state: Tak, code: 63 }
+      - { state: Trang, code: 92 }
+      - { state: Trat, code: 23 }
+      - { state: Ubon Ratchathani, code: 34 }
+      - { state: Udon Thani, code: 41 }
+      - { state: Uthai Thani, code: 61 }
+      - { state: Uttaradit, code: 53 }
+      - { state: Yala, code: 95 }
+      - { state: Yasothon, code: 35 }
+  - code: GB
+    states:
+      - { state: 'Aberdeen City', code: 'ABE' }
+      - { state: 'Aberdeenshire', code: 'ABD' }
+      - { state: 'Angus', code: 'ANS' }
+      - { state: 'Antrim', code: 'ANT' }
+      - { state: 'Ards', code: 'ARD' }
+      - { state: 'Argyll and Bute', code: 'AGB' }
+      - { state: 'Armagh', code: 'ARM' }
+      - { state: 'Ballymena', code: 'BLA' }
+      - { state: 'Ballymoney', code: 'BLY' }
+      - { state: 'Banbridge', code: 'BNB' }
+      - { state: 'Barking and Dagenham', code: 'BDG' }
+      - { state: 'Barnet', code: 'BNE' }
+      - { state: 'Barnsley', code: 'BNS' }
+      - { state: 'Bath and North East Somerset', code: 'BAS' }
+      - { state: 'Bedford', code: 'BDF' }
+      - { state: 'Belfast', code: 'BFS' }
+      - { state: 'Bexley', code: 'BEX' }
+      - { state: 'Birmingham', code: 'BIR' }
+      - { state: 'Blackburn with Darwen', code: 'BBD' }
+      - { state: 'Blackpool', code: 'BPL' }
+      - { state: 'Blaenau Gwent', code: 'BGW' }
+      - { state: 'Bolton', code: 'BOL' }
+      - { state: 'Bournemouth', code: 'BMH' }
+      - { state: 'Bracknell Forest', code: 'BRC' }
+      - { state: 'Bradford', code: 'BRD' }
+      - { state: 'Brent', code: 'BEN' }
+      - { state: 'Bridgend', code: 'BGE' }
+      - { state: 'Brighton and Hove', code: 'BNH' }
+      - { state: 'Bristol, City of', code: 'BST' }
+      - { state: 'Bromley', code: 'BRY' }
+      - { state: 'Buckinghamshire', code: 'BKM' }
+      - { state: 'Bury', code: 'BUR' }
+      - { state: 'Caerphilly', code: 'CAY' }
+      - { state: 'Calderdale', code: 'CLD' }
+      - { state: 'Cambridgeshire', code: 'CAM' }
+      - { state: 'Camden', code: 'CMD' }
+      - { state: 'Cardiff', code: 'CRF' }
+      - { state: 'Carmarthenshire', code: 'CMN' }
+      - { state: 'Carrickfergus', code: 'CKF' }
+      - { state: 'Castlereagh', code: 'CSR' }
+      - { state: 'Central Bedfordshire', code: 'CBF' }
+      - { state: 'Ceredigion', code: 'CGN' }
+      - { state: 'Cheshire East', code: 'CHE' }
+      - { state: 'Cheshire West and Chester', code: 'CHW' }
+      - { state: 'Clackmannanshire', code: 'CLK' }
+      - { state: 'Coleraine', code: 'CLR' }
+      - { state: 'Conwy', code: 'CWY' }
+      - { state: 'Cookstown', code: 'CKT' }
+      - { state: 'Cornwall', code: 'CON' }
+      - { state: 'Coventry', code: 'COV' }
+      - { state: 'Craigavon', code: 'CGV' }
+      - { state: 'Croydon', code: 'CRY' }
+      - { state: 'Cumbria', code: 'CMA' }
+      - { state: 'Darlington', code: 'DAL' }
+      - { state: 'Denbighshire', code: 'DEN' }
+      - { state: 'Derby', code: 'DER' }
+      - { state: 'Derbyshire', code: 'DBY' }
+      - { state: 'Derry', code: 'DRY' }
+      - { state: 'Devon', code: 'DEV' }
+      - { state: 'Doncaster', code: 'DNC' }
+      - { state: 'Dorset', code: 'DOR' }
+      - { state: 'Down', code: 'DOW' }
+      - { state: 'Dudley', code: 'DUD' }
+      - { state: 'Dumfries and Galloway', code: 'DGY' }
+      - { state: 'Dundee City', code: 'DND' }
+      - { state: 'Dungannon and South Tyrone', code: 'DGN' }
+      - { state: 'Durham, County', code: 'DUR' }
+      - { state: 'Ealing', code: 'EAL' }
+      - { state: 'East Ayrshire', code: 'EAY' }
+      - { state: 'East Dunbartonshire', code: 'EDU' }
+      - { state: 'East Lothian', code: 'ELN' }
+      - { state: 'East Renfrewshire', code: 'ERW' }
+      - { state: 'East Riding of Yorkshire', code: 'ERY' }
+      - { state: 'East Sussex', code: 'ESX' }
+      - { state: 'Edinburgh, City of', code: 'EDH' }
+      - { state: 'Eilean Siar', code: 'ELS' }
+      - { state: 'Enfield', code: 'ENF' }
+      - { state: 'Essex', code: 'ESS' }
+      - { state: 'Falkirk', code: 'FAL' }
+      - { state: 'Fermanagh', code: 'FER' }
+      - { state: 'Fife', code: 'FIF' }
+      - { state: 'Flintshire', code: 'FLN' }
+      - { state: 'Gateshead', code: 'GAT' }
+      - { state: 'Glasgow City', code: 'GLG' }
+      - { state: 'Gloucestershire', code: 'GLS' }
+      - { state: 'Greenwich', code: 'GRE' }
+      - { state: 'Gwynedd', code: 'GWN' }
+      - { state: 'Hackney', code: 'HCK' }
+      - { state: 'Halton', code: 'HAL' }
+      - { state: 'Hammersmith and Fulham', code: 'HMF' }
+      - { state: 'Hampshire', code: 'HAM' }
+      - { state: 'Haringey', code: 'HRY' }
+      - { state: 'Harrow', code: 'HRW' }
+      - { state: 'Hartlepool', code: 'HPL' }
+      - { state: 'Havering', code: 'HAV' }
+      - { state: 'Herefordshire', code: 'HEF' }
+      - { state: 'Hertfordshire', code: 'HRT' }
+      - { state: 'Highland', code: 'HLD' }
+      - { state: 'Hillingdon', code: 'HIL' }
+      - { state: 'Hounslow', code: 'HNS' }
+      - { state: 'Inverclyde', code: 'IVC' }
+      - { state: 'Isle of Anglesey', code: 'AGY' }
+      - { state: 'Isle of Wight', code: 'IOW' }
+      - { state: 'Isles of Scilly', code: 'IOS' }
+      - { state: 'Islington', code: 'ISL' }
+      - { state: 'Kensington and Chelsea', code: 'KEC' }
+      - { state: 'Kent', code: 'KEN' }
+      - { state: 'Kingston upon Hull', code: 'KHL' }
+      - { state: 'Kingston upon Thames', code: 'KTT' }
+      - { state: 'Kirklees', code: 'KIR' }
+      - { state: 'Knowsley', code: 'KWL' }
+      - { state: 'Lambeth', code: 'LBH' }
+      - { state: 'Lancashire', code: 'LAN' }
+      - { state: 'Larne', code: 'LRN' }
+      - { state: 'Leeds', code: 'LDS' }
+      - { state: 'Leicester', code: 'LCE' }
+      - { state: 'Leicestershire', code: 'LEC' }
+      - { state: 'Lewisham', code: 'LEW' }
+      - { state: 'Limavady', code: 'LMV' }
+      - { state: 'Lincolnshire', code: 'LIN' }
+      - { state: 'Lisburn', code: 'LSB' }
+      - { state: 'Liverpool', code: 'LIV' }
+      - { state: 'London, City of', code: 'LND' }
+      - { state: 'Luton', code: 'LUT' }
+      - { state: 'Magherafelt', code: 'MFT' }
+      - { state: 'Manchester', code: 'MAN' }
+      - { state: 'Medway', code: 'MDW' }
+      - { state: 'Merthyr Tydfil', code: 'MTY' }
+      - { state: 'Merton', code: 'MRT' }
+      - { state: 'Middlesbrough', code: 'MDB' }
+      - { state: 'Midlothian', code: 'MLN' }
+      - { state: 'Milton Keynes', code: 'MIK' }
+      - { state: 'Monmouthshire', code: 'MON' }
+      - { state: 'Moray', code: 'MRY' }
+      - { state: 'Moyle', code: 'MYL' }
+      - { state: 'Neath Port Talbot', code: 'NTL' }
+      - { state: 'Newcastle upon Tyne', code: 'NET' }
+      - { state: 'Newham', code: 'NWM' }
+      - { state: 'Newport', code: 'NWP' }
+      - { state: 'Newry and Mourne District', code: 'NYM' }
+      - { state: 'Newtownabbey', code: 'NTA' }
+      - { state: 'Norfolk', code: 'NFK' }
+      - { state: 'North Ayrshire', code: 'NAY' }
+      - { state: 'North Down', code: 'NDN' }
+      - { state: 'North East Lincolnshire', code: 'NEL' }
+      - { state: 'North Lanarkshire', code: 'NLK' }
+      - { state: 'North Lincolnshire', code: 'NLN' }
+      - { state: 'North Somerset', code: 'NSM' }
+      - { state: 'North Tyneside', code: 'NTY' }
+      - { state: 'North Yorkshire', code: 'NYK' }
+      - { state: 'Northamptonshire', code: 'NTH' }
+      - { state: 'Northumberland', code: 'NBL' }
+      - { state: 'Nottingham', code: 'NGM' }
+      - { state: 'Nottinghamshire', code: 'NTT' }
+      - { state: 'Oldham', code: 'OLD' }
+      - { state: 'Omagh', code: 'OMH' }
+      - { state: 'Orkney Islands', code: 'ORK' }
+      - { state: 'Oxfordshire', code: 'OXF' }
+      - { state: 'Pembrokeshire', code: 'PEM' }
+      - { state: 'Perth and Kinross', code: 'PKN' }
+      - { state: 'Peterborough', code: 'PTE' }
+      - { state: 'Plymouth', code: 'PLY' }
+      - { state: 'Poole', code: 'POL' }
+      - { state: 'Portsmouth', code: 'POR' }
+      - { state: 'Powys', code: 'POW' }
+      - { state: 'Reading', code: 'RDG' }
+      - { state: 'Redbridge', code: 'RDB' }
+      - { state: 'Redcar and Cleveland', code: 'RCC' }
+      - { state: 'Renfrewshire', code: 'RFW' }
+      - { state: 'Rhondda, Cynon, Taff', code: 'RCT' }
+      - { state: 'Richmond upon Thames', code: 'RIC' }
+      - { state: 'Rochdale', code: 'RCH' }
+      - { state: 'Rotherham', code: 'ROT' }
+      - { state: 'Rutland', code: 'RUT' }
+      - { state: 'St. Helens', code: 'SHN' }
+      - { state: 'Salford', code: 'SLF' }
+      - { state: 'Sandwell', code: 'SAW' }
+      - { state: 'Scottish Borders, The', code: 'SCB' }
+      - { state: 'Sefton', code: 'SFT' }
+      - { state: 'Sheffield', code: 'SHF' }
+      - { state: 'Shetland Islands', code: 'ZET' }
+      - { state: 'Shropshire', code: 'SHR' }
+      - { state: 'Slough', code: 'SLG' }
+      - { state: 'Solihull', code: 'SOL' }
+      - { state: 'Somerset', code: 'SOM' }
+      - { state: 'South Ayrshire', code: 'SAY' }
+      - { state: 'South Gloucestershire', code: 'SGC' }
+      - { state: 'South Lanarkshire', code: 'SLK' }
+      - { state: 'South Tyneside', code: 'STY' }
+      - { state: 'Southampton', code: 'STH' }
+      - { state: 'Southend-on-Sea', code: 'SOS' }
+      - { state: 'Southwark', code: 'SWK' }
+      - { state: 'Staffordshire', code: 'STS' }
+      - { state: 'Stirling', code: 'STG' }
+      - { state: 'Stockport', code: 'SKP' }
+      - { state: 'Stockton-on-Tees', code: 'STT' }
+      - { state: 'Stoke-on-Trent', code: 'STE' }
+      - { state: 'Strabane', code: 'STB' }
+      - { state: 'Suffolk', code: 'SFK' }
+      - { state: 'Sunderland', code: 'SND' }
+      - { state: 'Surrey', code: 'SRY' }
+      - { state: 'Sutton', code: 'STN' }
+      - { state: 'Swansea', code: 'SWA' }
+      - { state: 'Swindon', code: 'SWD' }
+      - { state: 'Tameside', code: 'TAM' }
+      - { state: 'Telford and Wrekin', code: 'TFW' }
+      - { state: 'Thurrock', code: 'THR' }
+      - { state: 'Torbay', code: 'TOB' }
+      - { state: 'Torfaen', code: 'TOF' }
+      - { state: 'Tower Hamlets', code: 'TWH' }
+      - { state: 'Trafford', code: 'TRF' }
+      - { state: 'Vale of Glamorgan, The', code: 'VGL' }
+      - { state: 'Wakefield', code: 'WKF' }
+      - { state: 'Walsall', code: 'WLL' }
+      - { state: 'Waltham Forest', code: 'WFT' }
+      - { state: 'Wandsworth', code: 'WND' }
+      - { state: 'Warrington', code: 'WRT' }
+      - { state: 'Warwickshire', code: 'WAR' }
+      - { state: 'West Berkshire', code: 'WBK' }
+      - { state: 'West Dunbartonshire', code: 'WDU' }
+      - { state: 'West Lothian', code: 'WLN' }
+      - { state: 'West Sussex', code: 'WSX' }
+      - { state: 'Westminster', code: 'WSM' }
+      - { state: 'Wigan', code: 'WGN' }
+      - { state: 'Wiltshire', code: 'WIL' }
+      - { state: 'Windsor and Maidenhead', code: 'WNM' }
+      - { state: 'Wirral', code: 'WRL' }
+      - { state: 'Wokingham', code: 'WOK' }
+      - { state: 'Wolverhampton', code: 'WLV' }
+      - { state: 'Worcestershire', code: 'WOR' }
+      - { state: 'Wrexham', code: 'WRX' }
+      - { state: 'York', code: 'YOR' }

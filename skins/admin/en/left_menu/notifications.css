@@ -1,0 +1,134 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Notifications menu style
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+#leftMenu ul.quick-links > li.notification  div.box.lazy-load {
+  display:block;
+  margin-left: -9999em;
+  transition: margin-left .15s step-start;
+  -webkit-transition: margin-left .15s step-start;
+}
+
+#leftMenu ul.quick-links > li.notification:hover div.box {
+  margin-left: 0;
+  transition: margin-left .15s step-end;
+  -webkit-transition: margin-left .15s step-end;
+}
+
+#leftMenu.compressed ul.quick-links > li.notification  div.box.lazy-load {
+  transition: none;
+  -webkit-transition: none;
+}
+
+#leftMenu.compressed ul.quick-links > li.notification:hover div.box {
+  transition: none;
+  -webkit-transition: none;
+}
+
+
+#leftMenu ul.quick-links .menu-item.notification .line .label span {
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+#leftMenu .notification .menu,
+#leftMenu.compressed ul.quick-links > li.notification ul.menu {
+  min-width: 250px;
+  max-width: 400px;
+  font-weight: lighter;
+}
+
+#leftMenu .notification .menu > li {
+  display: block;
+  text-align: left;
+  margin: 7px 18px 7px;
+}
+
+#leftMenu.compressed .notification ul.menu > li {
+  border: none;
+}
+
+#leftMenu ul.quick-links > li.notification ul.menu > li ul li::after,
+#leftMenu.compressed .notification ul.menu > li ul li::after {
+  border: none;
+}
+
+#leftMenu ul.quick-links > li ul li .line .link span {  
+  white-space: nowrap;
+}
+
+#leftMenu.compressed .notification ul.menu > li ul {
+  padding: 0;
+}
+
+#leftMenu ul.quick-links > li.notification div.box {
+  padding-left: 5px;
+}
+
+#leftMenu.compressed ul.quick-links > li.notification div.box {
+  padding-top: 5px;
+}
+
+#leftMenu.compressed ul.quick-links > li.notification ul {
+  padding: 7px 1px 5px 1px;
+}
+
+#leftMenu .notification .menu > li::after {
+  content: "";
+  border-right: 0 none;
+  border-bottom: 1px solid #2a2a2a;
+  height: 1px;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 6px;
+  position: static;
+}
+
+#leftMenu .notification .menu > li:last-child::after {
+  border: none;
+}
+
+#leftMenu .notification .notification-item .notification-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#leftMenu .notification .notification-item .notification-header svg {  
+  align-self: flex-start;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0px;
+  margin-top: 3px;
+  vertical-align: middle;
+}
+
+#leftMenu .notification .notification-item .notification-header span {
+  width: 155px;
+  vertical-align: middle;
+  font-size: 16px;
+  word-break: break-word;  
+  white-space: normal;
+}
+
+#leftMenu .notification .notification-item .notification-header .counter {
+  align-self: flex-start;
+  margin-top: 3px;
+  color: #fff;
+  font-size: 9px;
+  margin-top: 3px;
+  padding: 2px 3px;
+  border-radius: 2px;
+  min-width: 16px;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+To enable support of Clean URLs, edit the .htaccess file located in the root of your X-Cart directory to insert the required configuration directives:
+1. In the .htaccess file, find the below code block (quoted with line numbers):
+
+21  RewriteRule (^|/)\. - [F]
+22
+23  RewriteCond %{REQUEST_FILENAME} !-f
+24  RewriteCond %{REQUEST_FILENAME} !-d
+25
+26  RewriteRule ^sitemap.xml(\?.+)?$ cart.php?target=sitemap [NC,L,QSA]
+27
+28  RewriteRule ^((([/_a-z0-9-]+)/)?([_a-z0-9-]+)/)?([_a-z0-9-]+)(/?)(\.(htm|html))?$ cart.php?url=$5&last=$4&rest=$3&ext=$7 [NC,L,QSA]
+
+2. Replace it with the following code block (also quoted with line numbers):
+
+21  RewriteRule (^|/)\. - [F]
+22
+23  RewriteCond %{REQUEST_FILENAME} !-f
+24  RewriteCond %{REQUEST_FILENAME} !-d
+25  RewriteRule ^sitemap.xml(\?.+)?$ cart.php?target=sitemap [NC,L,QSA]
+26
+27  RewriteCond %{REQUEST_FILENAME} !-f
+28  RewriteCond %{REQUEST_FILENAME} !-d
+29  RewriteRule ^((([/_a-z0-9-]+)/)?([_a-z0-9-]+)/)?([_a-z0-9-]+)(/?)(\.([_a-z0-9-]+))?$ cart.php?url=$5&last=$4&rest=$3&ext=$7 [NC,L,QSA]
+
+If you are using nginx, please make changes to nginx.conf according to the recommendations in the article
+http://kb.x-cart.com/display/XDD/Setting+up+seo-friendly+URLs#Settingupseo-friendlyURLs-Settingupnginx

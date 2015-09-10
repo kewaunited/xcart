@@ -1,0 +1,526 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# @author    Qualiteam software Ltd <info@x-cart.com>
+# @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+# @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+# @link      http://www.x-cart.com/
+
+XLite\Model\Config:
+  - name: userid
+    category: CDev\USPS
+    translations:
+      - code: en
+        option_name: User ID
+  - name: server_url
+    category: CDev\USPS
+    value: 'http://testing.shippingapis.com/ShippingAPI.dll'
+    translations:
+      - code: en
+        option_name: USPS server URL
+  - name: length
+    category: CDev\USPS
+    value: 10
+    translations:
+      - code: en
+        option_name: Package length (mm)
+  - name: width
+    category: CDev\USPS
+    value: 7
+    translations:
+      - code: en
+        option_name: Package width (mm)
+  - name: height
+    category: CDev\USPS
+    value: 9
+    translations:
+      - code: en
+        option_name: Package height (mm)
+  - name: girth
+    category: CDev\USPS
+    value: 0
+    translations:
+      - code: en
+        option_name: Girth
+  - name: currency_rate
+    category: CDev\USPS
+    value: 1
+    translations:
+      - code: en
+        option_name: Currency rate
+        option_comment: (specify rate X, where 1 USD = X in shop currency)
+  - name: container
+    category: CDev\USPS
+    value: VARIABLE
+    translations:
+      - code: en
+        option_name: Container
+  - name: package_size
+    category: CDev\USPS
+    value: REGULAR
+    translations:
+      - code: en
+        option_name: Package size
+  - name: machinable
+    category: CDev\USPS
+    type: checkbox
+    value: Y
+    translations:
+      - code: en
+        option_name: Machinable
+  - name: mail_type
+    category: CDev\USPS
+    value: Package
+    translations:
+      - code: en
+        option_name: Mail type
+  - name: container_intl
+    category: CDev\USPS
+    value: RECTANGULAR
+    translations:
+      - code: en
+        option_name: Container (Intl)
+  - name: commercial
+    category: CDev\USPS
+    type: checkbox
+    value: N
+    translations:
+      - code: en
+        option_name: Commercial
+  - name: gxg
+    category: CDev\USPS
+    type: checkbox
+    value: N
+    translations:
+      - code: en
+        option_name: GXG enabled
+  - name: gxg_pobox
+    category: CDev\USPS
+    type: checkbox
+    value: N
+    translations:
+      - code: en
+        option_name: GXG destination is a post office box
+  - name: gxg_gift
+    category: CDev\USPS
+    type: checkbox
+    value: N
+    translations:
+      - code: en
+        option_name: GXG package contains a gift
+  - name: debug_enabled
+    category: CDev\USPS
+    type: checkbox
+    value: N
+    translations:
+      - code: en
+        option_name: Enable debugging
+  - name: autoenable_new_methods
+    category: CDev\USPS
+    type: checkbox
+    value: Y
+    translations:
+      - code: en
+        option_name: Auto enable new USPS shipping methods
+
+  - name: max_weight
+    category: CDev\USPS
+    value: 70
+    translations:
+      - code: en
+        option_name: Maximum package weight
+  - name: use_cod_price 
+    category: CDev\USPS
+    type: checkbox
+    value: Y
+    translations:
+      - code: en
+        option_name: Use fixed COD price
+  - name: cod_price 
+    category: CDev\USPS
+    value: 6.95
+    translations:
+      - code: en
+        option_name: Fixed COD price
+  - name: first_class_mail_type
+    category: CDev\USPS
+    value: 'PARCEL'
+    translations:
+      - code: en
+        option_name: First-Class mail type
+  - name: use_rate_type
+    category: CDev\USPS
+    value: 'Rate'
+    translations:
+      - code: en
+        option_name: Rate type to use
+
+XLite\Model\Shipping\Method:
+  - processor: usps
+    carrier: usps
+    code: D-0-849552316a16361a0fc58195948bebfb
+    enabled: 1
+    position: 730
+    translations:
+      - code: en
+        name: "U.S.P.S. First-Class Mail<sup>&#174;</sup> Parcel"
+  - processor: usps
+    carrier: usps
+    code: D-0-a81b76fe49397e327ec5a6911751147a
+    enabled: 1
+    position: 740
+    translations:
+      - code: en
+        name: "U.S.P.S. First-Class Mail<sup>&reg;</sup> Large Envelope"
+  - processor: usps
+    carrier: usps
+    code: D-15-3c4d0bc6c8d2b9f7b0b14215cb7c847e
+    enabled: 1
+    position: 750
+    translations:
+      - code: en
+        name: "U.S.P.S. First-Class Mail<sup>&reg;</sup> Large Postcards"
+  - processor: usps
+    carrier: usps
+    code: D-0-d1dd1cef47fbbecdfa8d3a79a95d9ebf
+    enabled: 1
+    position: 760
+    translations:
+      - code: en
+        name: "U.S.P.S. First-Class Mail<sup>&reg;</sup> Letter"
+  - processor: usps
+    carrier: usps
+    code: D-0-c31962d3103cf45959b378a2e9cdc5a5
+    enabled: 1
+    position: 770
+    translations:
+      - code: en
+        name: "U.S.P.S. First-Class Mail<sup>&reg;</sup> Package"
+  - processor: usps
+    carrier: usps
+    code: D-0-e67f136180b9f5fdd18db45563e4882c
+    enabled: 1
+    position: 780
+    translations:
+      - code: en
+        name: "U.S.P.S. First-Class Mail<sup>&reg;</sup> Postcards"
+  - processor: usps
+    carrier: usps
+    code: D-1-afad3f463c5ece04d49c5d8eca19f6ac
+    enabled: 1
+    position: 790
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup>"
+  - processor: usps
+    carrier: usps
+    code: D-1-0e5227e34cbc5be6ae49dafa4f4c30cb
+    enabled: 1
+    position: 795
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail 2-Day<sup>&#8482;</sup>"
+  - processor: usps
+    carrier: usps
+    code: D-2-61923434177910f39bbf942a341271b9
+    enabled: 1
+    position: 800
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup> Hold For Pickup"
+  - processor: usps
+    carrier: usps
+    code: D-3-45b59a7063b971a09e17b755946c9b22
+    enabled: 1
+    position: 810
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup>"
+  - processor: usps
+    carrier: usps
+    code: D-3-56d88a75443646cb125ef07157e4e05a
+    enabled: 1
+    position: 815
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail Express 1-Day<sup>&#8482;</sup>"
+  - processor: usps
+    carrier: usps
+    code: D-4-52663d525bdb025ea325e5c3a0cb03a3
+    enabled: 1
+    position: 820
+    translations:
+      - code: en
+        name: "U.S.P.S. Parcel Post<sup>&reg;</sup>"
+  - processor: usps
+    carrier: usps
+    code: D-4-b5a8be0138856b955fa99e7af066c94c
+    enabled: 1
+    position: 825
+    translations:
+      - code: en
+        name: "U.S.P.S. Standard Post<sup>&#174;</sup>"
+  - processor: usps
+    carrier: usps
+    code: D-6-c7abda37422d0fcdef7b4c394b313d4e
+    enabled: 1
+    position: 830
+    translations:
+      - code: en
+        name: "U.S.P.S. Media Mail<sup>&#174;</sup>"
+  - processor: usps
+    carrier: usps
+    code: D-7-c8129cdc3e98fa21d9cf9167e9cab597
+    enabled: 1
+    position: 840
+    translations:
+      - code: en
+        name: "U.S.P.S. Library Mail"
+  - processor: usps
+    carrier: usps
+    code: D-13-8841b3ccfce67edefb03a94050f03b3b
+    enabled: 1
+    position: 850
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup> Flat Rate Envelope"
+  - processor: usps
+    carrier: usps
+    code: D-16-ace19ca139e7dc141c15d4a2f97b6782
+    enabled: 1
+    position: 860
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> Flat Rate Envelope"
+  - processor: usps
+    carrier: usps
+    code: D-17-edd8fd63fd436cf0cf71653292d8057d
+    enabled: 1
+    position: 870
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> Medium Flat Rate Box"
+  - processor: usps
+    carrier: usps
+    code: D-22-b9c431ec2f4d427cd0bc6bcabb4cc79d
+    enabled: 1
+    position: 880
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> Large Flat Rate Box"
+  - processor: usps
+    carrier: usps
+    code: D-23-e5777e7ab84e7923023391399711ac0b
+    enabled: 1
+    position: 890
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup> Sunday/Holiday Delivery"
+  - processor: usps
+    carrier: usps
+    code: D-25-e5ab7840d6aa12c939bd2a2c676aa9ca
+    enabled: 1
+    position: 900
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup> Sunday/Holiday Delivery Flat Rate Envelope"
+  - processor: usps
+    carrier: usps
+    code: D-27-61eadc6fa8c4109a82360451b1a85316
+    enabled: 1
+    position: 910
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup> Flat Rate Envelope Hold For Pickup"
+  - processor: usps
+    carrier: usps
+    code: D-28-b56b4c43a2a69ad143f0a360abc53847
+    enabled: 1
+    position: 920
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> Small Flat Rate Box"
+  - processor: usps
+    carrier: usps
+    code: D-29-7241638572afb8e35f6ac37dad051875
+    enabled: 1
+    position: 930
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> Padded Flat Rate Envelope"
+  - processor: usps
+    carrier: usps
+    code: D-30-ade7661b6881e2fdf38e8a3ecc4d600c
+    enabled: 1
+    position: 940
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup> Legal Flat Rate Envelope"
+  - processor: usps
+    carrier: usps
+    code: D-31-1e153a7f9b114152b084407d6e643737
+    enabled: 1
+    position: 950
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup> Legal Flat Rate Envelope Hold For Pickup"
+  - processor: usps
+    carrier: usps
+    code: D-32-83c3d98eb6f91f7d9b9f7c10c1b45096
+    enabled: 1
+    position: 960
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup> Sunday/Holiday Delivery Legal Flat Rate Envelope"
+  - processor: usps
+    carrier: usps
+    code: D-38-38d44159a14a13ba7c90837df05b1a9f
+    enabled: 1
+    position: 970
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> Gift Card Flat Rate Envelope"
+  - processor: usps
+    carrier: usps
+    code: D-40-98fe917f0a5c410e5859fbcc08a86383
+    enabled: 1
+    position: 980
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> Window Flat Rate Envelope"
+  - processor: usps
+    carrier: usps
+    code: D-42-be7a5f5e21865d87767fb5cca02ce3a1
+    enabled: 1
+    position: 990
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> Small Flat Rate Envelope"
+  - processor: usps
+    carrier: usps
+    code: D-44-f4a424030226c25bcdc19598076fb295
+    enabled: 1
+    position: 1000
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> Legal Flat Rate Envelope"
+  - processor: usps
+    carrier: usps
+    code: D-61-3977645bc5fd39059da026d386e65bbe
+    enabled: 1
+    position: 1005
+    translations:
+      - code: en
+        name: "U.S.P.S. First-Class<sup>&#8482;</sup> Package Service"
+  - processor: usps
+    carrier: usps
+    code: I-1-6e2c366e2448bc34408ecaedf3606f0d
+    enabled: 1
+    position: 1010
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup> International"
+  - processor: usps
+    carrier: usps
+    code: I-2-d855b63c6bd8d97c5d9c4840747d8719
+    enabled: 1
+    position: 1020
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> International"
+  - processor: usps
+    carrier: usps
+    code: I-4-e2ac2a87229db380023d6af101839045
+    enabled: 1
+    position: 1030
+    translations:
+      - code: en
+        name: "U.S.P.S. Global Express Guaranteed<sup>&reg;</sup> (GXG)"
+  - processor: usps
+    carrier: usps
+    code: I-9-5ebf182e778d3d0c5d2cd96a17bf6364
+    enabled: 1
+    position: 1040
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> International Medium Flat Rate Box"
+  - processor: usps
+    carrier: usps
+    code: I-10-f77a9f4bd761cd740d0d78f1047fa951
+    enabled: 1
+    position: 1050
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup> International Flat Rate Envelope"
+  - processor: usps
+    carrier: usps
+    code: I-11-beec5db921d5bb02ea35e3a934d8b768
+    enabled: 1
+    position: 1060
+    translations:
+      - code: en
+        name: "U.S.P.S. Priority Mail<sup>&reg;</sup> International Large Flat Rate Box"
+  - processor: usps
+    carrier: usps
+    code: I-12-16af3c527b1e5d1f2595358b48d61449
+    enabled: 1
+    position: 1070
+    translations:
+      - code: en
+        name: "U.S.P.S. USPS GXG<sup>&trade;</sup> Envelopes"
+  - processor: usps
+    carrier: usps
+    code: I-15-fdebfa8649d935909084454bdc99343d
+    enabled: 1
+    position: 1080
+    translations:
+      - code: en
+        name: "U.S.P.S. First-Class Mail<sup>&reg;</sup> International Package"
+  - processor: usps
+    carrier: usps
+    code: I-17-f85b7aed6afb59ddfd2e2edfa6354f69
+    enabled: 1
+    position: 1090
+    translations:
+      - code: en
+        name: "U.S.P.S. Express Mail<sup>&reg;</sup> International Legal Flat Rate Envelope"
+
+XLite\Model\Payment\Method:
+  - service_name: COD_USPS
+    class: 'Module\CDev\USPS\Model\Payment\Processor\COD'
+    countries: [US]
+    added: 1
+    translations:
+      - code: en
+        name: 'Cash on Delivery (USPS)'
+\XLite\Model\LanguageLabel:
+  - { name: "U.S.P.S. settings", translations: [{ code: en, label: "U.S.P.S. settings" }] }
+  - { name: "Test U.S.P.S. rates calculation", translations: [{ code: en, label: "Test U.S.P.S. rates calculation" }] }
+  - { name: "Authentication options", translations: [{ code: en, label: "Authentication options" }] }
+  - { name: "User ID", translations: [{ code: en, label: "User ID" }] }
+  - { name: "U.S.P.S. API server URL", translations: [{ code: en, label: "U.S.P.S. API server URL" }] }
+  - { name: "Common options", translations: [{ code: en, label: "Common options" }] }
+  - { name: "Girth (inches)", translations: [{ code: en, label: "Girth (inches)" }] }
+  - { name: "(required for large size and container is non-rectangular or variable)", translations: [{ code: en, label: "(required for large size and if the container is non-rectangular or variable)" }] }
+  - { name: "(specify rate X, where 1 USD = X in shop currency)", translations: [{ code: en, label: "(specify rate X, where 1 USD = X in shop currency)" }] }
+  - { name: "The shipping cost is always returned in US Dollars. So if the store use other currency for payments you need to specify", translations: [{ code: en, label: "The shipping cost is always returned in US Dollars. So if the store uses a different currency for payments, you need to specify" }] }
+  - { name: "the conversion rate to convert the shipping cost returned by shipping service into the necessary currency. Otherwise leave 1.", translations: [{ code: en, label: "a conversion rate to convert the shipping cost returned by the shipping service into your store's currency. If the same currency is used, leave this set to 1." }] }
+  - { name: "Enter here a URL provided to you  by U.S.P.S. in the notification about registering for the U. S. Postal Service's Web Tools Application Program Interfaces", translations: [{ code: en, label: "Enter the URL provided to you by U.S.P.S. in the notification about your successful registration for the U. S. Postal Service's Web Tools Application Program Interfaces. For example: <ul><li>http://testing.shippingapis.com/ShippingAPITest.dll</li><li>http://production.shippingapis.com/ShippingAPI.dll</li></ul>" }] }
+  - { name: "Domestic U.S.P.S.", translations: [{ code: en, label: "Domestic U.S.P.S." }] }
+  - { name: "Package Size (length + girth, inches)", translations: [{ code: en, label: "Package Size (length + girth, inches)" }] }
+  - { name: "International U.S.P.S.", translations: [{ code: en, label: "International U.S.P.S." }] }
+  - { name: "First-Class mail type", translations: [{ code: en, label: "First-Class mail type" }] }
+  - { name: "Mail type", translations: [{ code: en, label: "Mail type" }] }
+  - { name: "Get commercial base postage", translations: [{ code: en, label: "Get commercial base postage" }] }
+  - { name: "Global Express Guarantee (GXG)", translations: [{ code: en, label: "Global Express Guarantee (GXG)" }] }
+  - { name: "GXG destination is a post office box", translations: [{ code: en, label: "GXG destination is a post office box" }] }
+  - { name: "GXG package contains a gift", translations: [{ code: en, label: "GXG package contains a gift" }] }
+  - { name: "Additional options", translations: [{ code: en, label: "Additional options" }] }
+  - { name: "Log all comunications between shopping cart and USPS server", translations: [{ code: en, label: "Log all communication between shopping cart and USPS server" }] }
+  - { name: "Auto enable new USPS shipping methods", translations: [{ code: en, label: "Auto enable new USPS shipping methods" }] }
+  - { name: "If you are planning to allow your customers to use the COD payment method for orders shipped with USPS shipping methods, you can make the calculation of shipping costs faster by setting a fixed extra fee for using the COD payment method.", translations: [{ code: en, label: "If you are planning to allow your customers to use the COD payment method for orders shipped with USPS shipping methods, you can make the calculation of shipping costs faster by setting a fixed extra fee for using the COD payment method.<br /><br />If a fixed amount COD fee is not set on the store's end, it will be calculated on the USPS end, and to get information about the COD fee amount the store will need to send several requests to the USPS API (one for each USPS service type), which may take up to 14 seconds. When using a fixed amount COD fee, the store will only send a single request to the USPS API, which will take under one second.<br /><br />Using a <b>fixed amount COD fee</b> allows the store to calculate the shipping cost much faster and is the <b>recommended option</b>." }] }
+  - { name: "If you have selected to use a fixed COD fee, specify the fee amount here.", translations: [{ code: en, label: 'If you have selected to use a fixed COD fee, specify the fee amount here. The COD fee will be used for all shipping methods returned by the USPS server.<br /><br />You can find the current price for the USPS Collect on Delivery (COD) extra service on this page: <a href="https://www.usps.com/business/add-extra-services.htm" target="_blank">https://www.usps.com/business/add-extra-services.htm</a>' }] }
+  - { name: "Pricing type to be used", translations: [{ code: en, label: "Pricing type to be used" }] }
+  - { name: 'COD fee ($)', translations: [{ code: en, label: 'COD fee ($)' }] }
+

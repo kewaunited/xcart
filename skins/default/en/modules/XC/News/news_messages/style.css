@@ -1,0 +1,54 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * News list styles
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+.news-messages-list li strong {
+  color: #404040;
+  font-size: 18px;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 19px;
+}
+
+.news-messages-list li .news-message-date {
+  color: #888;
+  padding-top: 6px;
+  display: inline-block;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.news-messages-list li .news-message-link {
+  padding-top: 1px;
+}
+
+.news-messages-list li .news-message-link a {
+  font-size: 18px;
+}
+
+.news-messages-list ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.news-messages-list li {
+  padding: 0px;
+  background-image: none;
+  list-style: none;
+}
+
+.news-messages-list ul ul {
+  padding-bottom: 15px;
+}
+
+.news-messages-list ul ul li {
+  padding-bottom: 15px;
+}
+

@@ -1,0 +1,16 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# @author    Qualiteam software Ltd <info@x-cart.com>
+# @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+# @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+# @link      http://www.x-cart.com/
+
+XLite\Model\Config:
+  - { name: upgrade_wave_sep, category: Environment, type: separator, orderby: 200, translations: [{ code: en, option_name: 'Upgrade options' }] }
+  - { name: upgrade_wave, category: Environment, type: 'XLite\View\FormField\Select\UpgradeWave', orderby: 210, value: '', translations: [{ code: en, option_name: 'Upgrade access level' }] }
+  - { name: quick_data_rebuilding, category: CacheManagement, type: checkbox, orderby: 100, value: N, translations: [{ code: en, option_name: 'Perform quick data calculation during store re-deployment', option_comment: 'Calculated quick data enhances your store''s performance by allowing quick product sorting. If you want quick data to be calculated along with store re-deployment, make sure this setting is enabled before running the "Re-deploy the store" tool. Keep the setting disabled if you want to do the re-deployment without the calculation of quick data.' }] }
+
+XLite\Model\LanguageLabel:
+  - { name: 'In this section you can review the recent payment transactions that have taken place at your store', translations: [{ code: en, label: 'In this section you can review the recent payment transactions that have taken place at your store, both successful and failed. You can easily identify orders with payment problems and increase your sales by following up on abandoned carts.' }] }

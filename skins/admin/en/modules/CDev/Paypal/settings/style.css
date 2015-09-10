@@ -1,0 +1,152 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Setting page styles
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+.payment-settings .dialog-content {
+  display: inline-block;
+  width: 540px;
+}
+
+.payment-settings div.table-label {
+  width: 210px;
+}
+
+.payment-settings .logo-ppa {
+  background: transparent url(../images/ppa.png) no-repeat left top;
+  width: 316px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.payment-settings .logo-pfl {
+  background: transparent url(../images/pfl.png) no-repeat left top;
+  width: 280px;
+  height: 126px;
+  margin-bottom: 10px;
+}
+
+.payment-settings .logo-ppec {
+  background: transparent url(../images/ppec.png) no-repeat left top;
+  width: 228px;
+  height: 44px;
+  margin-bottom: 10px;
+}
+
+.payment-settings .logo-pc {
+  background: transparent url(../images/pc.gif) no-repeat left top;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.payment-settings .links {
+  background-color: #F7F7F7;
+  margin: 30px 0;
+  padding: 15px 0 15px 20px;
+}
+
+.payment-settings .links a {
+  font-size: 16px;
+}
+
+.payment-settings .links .help-link {
+  padding: 0;
+}
+
+.payment-settings .help-link i {
+    font-size: 14px;
+    color: #154e9c;
+}
+
+.payment-settings .help-text i {
+    font-size: 10px;
+    color: #154e9c;
+}
+
+.payment-settings .external i {
+    display: none;
+}
+
+.payment-settings .external:hover i {
+  display: inline;
+}
+
+.payment-settings .help-text .tooltip-main {
+  display: inline;
+  padding: 0;
+}
+
+.payment-settings .help-text .tooltip-caption {
+  font-size: 12px;
+}
+
+.payment-settings .help-text div.clear {
+  clear: none;
+  display: inline;
+}
+
+.payment-settings .form-field-comment.email-comment {
+  width: auto;
+}
+
+.buynowenabled-value .tooltip-main {
+  width: 264px;
+  height: 32px;
+  text-align: right;
+  background: transparent url(https://www.paypalobjects.com/webstatic/en_US/i/buttons/buy-logo-small.png) no-repeat 10px center;
+}
+
+.general-settings .model-properties ul.table .table-label {
+  width: 240px;
+}
+
+.general-settings .model-properties ul.table div.table-value input[type="text"] {
+  width: 450px;
+}
+
+.general-settings .model-properties ul.table li.select-protocol .table-label {
+  height: 49px;
+}
+
+.general-settings .model-properties ul.table li.select-protocol div.table-value .toggle-edit {
+  display: inline-block;
+  color: #1a509a;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.general-settings .model-properties ul.table li.select-protocol div.table-value .toggle-edit:hover {
+  color: #0f9dcc;
+}
+
+.general-settings .model-properties ul.table li.select-protocol div.table-value .view,
+.general-settings .model-properties ul.table li.select-protocol div.table-value .value {
+  display: inline-block;
+  max-width: 700px;
+}
+
+.general-settings .model-properties ul.table li.select-protocol div.table-value .view {
+  margin-top: 3px;
+}
+
+.general-settings .model-properties ul.table li.select-protocol div.table-value .value {
+  white-space: nowrap;
+}
+
+.general-settings .model-properties ul.table li.select-protocol div.table-value .value div,
+.general-settings .model-properties ul.table li.select-protocol div.table-value .value select {
+  display: inline-block;
+}
+
+.general-settings .model-properties ul.table li.select-protocol div.table-value .value select {
+  width: 70px;
+  padding: 3px;
+}

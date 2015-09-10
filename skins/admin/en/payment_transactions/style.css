@@ -1,0 +1,82 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Payment transactions list styles
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+.searchpanel-payment-transaction-admin-main .search-conditions-box .search-conditions div.table-value input[type="text"],
+.searchpanel-payment-transaction-admin-main .search-conditions-box .search-conditions-hidden div.table-value input[type="text"] { 
+  width: 210px;
+}
+
+.searchpanel-payment-transaction-admin-main .search-conditions-box .search-conditions div.table-value select {
+  width: 245px;
+}
+
+.searchpanel-payment-transaction-admin-main .search-conditions-box .search-conditions-hidden div.table-label {
+  width: auto;
+}
+
+.items-list-table table.list tbody.lines tr.line td.cell.profile {
+  line-height: 20px;
+}
+
+.items-list.payment-transactions table.list tbody td.profile .profile-email a {
+  color: #8f8f8f;
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+.items-list.payment-transactions th.profile {
+  padding-left: 41px;
+}
+
+
+.items-list.payment-transactions .profile .cell {
+  width: 250px;
+  max-width: 250px;
+}
+
+.items-list.payment-transactions .profile .cell .profile-box {
+  position: relative;
+  width: 95%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.items-list.payment-transactions .profile-box .profile-email {
+  display: block;
+  line-height: 13px;
+}
+
+.items-list.payment-transactions .profile .cell .profile-icon,
+.items-list.payment-transactions .profile .cell .profile-anonymous-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+.items-list.payment-transactions .profile .cell .profile-anonymous-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.items-list.payment-transactions img.anonym {
+  width: 15px;
+  height: 17px;
+  background: transparent url(../../../../images/anonym_icon.png) no-repeat left top;
+  margin-right: 5px;
+}
+
+.items-list.payment-transactions img.anonymous {
+  width: 18px;
+  margin-right: 5px;
+}

@@ -1,0 +1,78 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Inline for mfield common styles
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+.inline-field input,
+  .inline-field select,
+  .inline-field textarea,
+  .inline-field span.text
+{
+  display: inline-block;
+}
+
+.inline-field.has-view .field {
+  display: none;
+}
+
+.edit-open-mark .inline-field .view,
+.inline-field.edit-open-mark .view
+{
+  display: none;
+}
+
+.edit-open-mark .inline-field .view.editable
+{
+  display: none;
+}
+
+.edit-open-mark .inline-field.has-view .field,
+.inline-field.has-view.edit-open-mark .field
+{
+  display: block;
+}
+
+.edit-mark .inline-field.editable .view,
+.inline-field.editable:hover .view
+{
+  cursor: pointer;
+  background-color: #faf5dd;
+  border: 1px solid #e0dabc;
+}
+
+.edit-mark .inline-field.editable .view .right-fade,
+.inline-field.editable:hover .view .right-fade
+{
+  display: none;
+}
+
+.remove-mark .inline-field.editable .view {
+  background-color: transparent;
+  cursor: auto;
+}
+
+.inline-field .field .wheel-mark {
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+.inline-field.editable .view {
+  padding: 6px 10px 6px 9px;
+  margin: 0 -4px 0 0;
+  border: 1px solid transparent;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.inline-field .not-editable.view {
+  padding: 6px 10px 6px 9px;
+  margin: 0 -4px 0 0;
+  border: 1px solid transparent;
+}

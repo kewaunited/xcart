@@ -1,0 +1,117 @@
+<?php
+// vim: set ts=4 sw=4 sts=4 et:
+
+/**
+ * X-Cart
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the software license agreement
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.x-cart.com/license-agreement.html
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to licensing@x-cart.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not modify this file if you wish to upgrade X-Cart to newer versions
+ * in the future. If you wish to customize X-Cart for your needs please
+ * refer to http://www.x-cart.com/ for more information.
+ *
+ * @category  X-Cart 5
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+namespace XLite\Module\CDev\GoSocial\View\ExternalSDK;
+
+/**
+ * Facebook SDK loader
+ *
+ * @ListChild (list="body", zone="customer", weight="999998")
+ */
+class Facebook extends \XLite\View\ExternalSDK\AExternalSDK
+{
+    /**
+     * Return list of allowed targets
+     *
+     * @return array
+     */
+    public static function getAllowedTargets()
+    {
+        $list = parent::getAllowedTargets();
+        $list[] = 'product';
+
+        return $list;
+    }
+
+    /**
+     * Return widget default template
+     *
+     * @return string
+     */
+    protected function getDefaultTemplate()
+    {
+        return 'modules/CDev/GoSocial/sdk/facebook.tpl';
+    }
+
+    /**
+     * Get javascript SDK URL
+     *
+     * @return string
+     */
+    protected function getSDKUrl()
+    {
+        return '//connect.facebook.net/' . $this->getLocale()
+            . '/all.js?t=' . microtime(true)
+            . '#' . http_build_query($this->getQuery());
+    }
+
+    /**
+     * Get locale
+     *
+     * @return string
+     */
+    protected function getLocale()
+    {
+        return 'en_US';
+    }
+
+    /**
+     * Get SDK URL hash query
+     *
+     * @return array
+     */
+    protected function getQuery()
+    {
+        $query = array(
+            'xfbml'  => '1',
+        );
+
+        if (\XLite\Core\Config::getInstance()->CDev->GoSocial->fb_app_id) {
+            $query['appId'] = preg_replace('/\D/Ss', '', \XLite\Core\Config::getInstance()->CDev->GoSocial->fb_app_id);
+        }
+
+        return $query;
+    }
+
+    /**
+     * Check if widget is visible
+     *
+     * @return boolean
+     */
+    protected function isVisible()
+    {
+        return parent::isVisible()
+            && (
+                \XLite\Core\Config::getInstance()->CDev->GoSocial->fb_like_use
+                || \XLite\Core\Config::getInstance()->CDev->GoSocial->fb_comments_use
+            )
+            && \XLite\Core\Config::getInstance()->CDev->GoSocial->fb_app_id;
+    }
+}
+

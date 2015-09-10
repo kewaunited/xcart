@@ -1,0 +1,39 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Module banner
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+.module-banner {
+  position: relative;
+}
+
+.module-banner .banner {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 140px;
+  max-width: 1180px;
+}
+
+.module-banner .close-banner {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  font-size: 14px;
+  color: #fff;
+  opacity: .3;
+  cursor: pointer;
+}
+
+.module-banner .close-banner:hover {
+  opacity: 1;
+}
+
+.module-banner.qsl_abandonedcartreminder .banner {
+  background-image: url(images/QSL_AbandonedCartReminder.png);
+}

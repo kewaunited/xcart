@@ -1,0 +1,34 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * AuctionInc settings style
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+.table-value.length-value,
+.table-value.width-value,
+.table-value.height-value {
+  display: inline-block;
+  padding: 0;
+}
+
+#ondemand,
+#carrieraccessorialfees {
+  width: 500px;
+}
+
+a.external:after {
+  content: "\f08e";
+  font: normal normal normal 14px/1 FontAwesome;
+  margin-left: 5px;
+  font-size: 11px;
+  display: none;
+}
+
+a.external:hover:after {
+  display: inline-block;
+}

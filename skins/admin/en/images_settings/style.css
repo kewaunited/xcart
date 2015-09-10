@@ -1,0 +1,59 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Images tab style
+ *
+ * @author    Qualiteam software Ltd <info@x-cart.com>
+ * @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+ * @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+ * @link      http://www.x-cart.com/
+ */
+
+.images-sizes {
+  margin-bottom: 40px;
+}
+
+.items-list-table.images-settings {
+  width: 600px;
+}
+
+.items-list-table.images-settings table.list td.cell.main {
+  min-width: 200px;
+}
+.items-list-table.images-settings table.list td.cell .inline-field input[type="text"] {
+  width: 70px;
+}
+
+.items-list-table.images-settings table.list td.cell.main .value {
+  line-height: initial;
+  white-space: normal;
+}
+
+.items-list-table.images-settings table.list td.cell.main .preview {
+*  display: inline-block;
+}
+
+.items-list-table.images-settings table.list td.cell.main .preview {
+  text-decoration: none;
+  cursor: pointer;
+  color: #1a509a;
+  border-bottom: 1px dotted;
+  padding: 0;
+}
+
+.items-list-table.images-settings table.list td.cell.main .preview:hover {
+  color: #0f9dcc;
+  border-bottom-color: #0f9dcc;
+}
+
+.items-list-table.images-settings table.list td.cell.main .tooltip .tooltip-inner {
+  max-width: none;
+}
+
+.image-resize {
+  margin-bottom: 40px;
+}
+
+.sticky-panel.images-settings-panel .box .panel-cell.last {
+  float: right;
+}

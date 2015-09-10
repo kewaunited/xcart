@@ -1,0 +1,14 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# @author    Qualiteam software Ltd <info@x-cart.com>
+# @copyright Copyright (c) 2011-2015 Qualiteam software Ltd <info@x-cart.com>. All rights reserved
+# @license   http://www.x-cart.com/license-agreement.html X-Cart 5 License Agreement
+# @link      http://www.x-cart.com/
+
+XLite\Model\Config:
+  - { name: freight_shipping_calc_mode, category: XC\FreeShipping, type: '\XLite\Module\XC\FreeShipping\View\FormField\FreightMode', orderby: 10, value: F, translations: [{ code: en, option_name: 'Shipping cost for products with a defined shipping freight value should be calculated as' }, { code: ru, option_name: 'Стоимость доставки для продуктов с заданным значением поля "Фиксированная стоимость доставки" должна быть равна' }] }
+
+XLite\Model\Shipping\Method:
+  - { processor: offline, code: 'FIXEDFEE', enabled: true, free: false, position: 10010, translations: [{ code: en, name: "Fixed shipping cost used" }, { code: ru, name: "Фиксированная стоимость доставки" }], shipping_markups: [{ zone: { zone_name: 'All Addresses (default zone)' }, min_weight: 0, max_weight: 999999, min_total: 0, max_total: 999999, min_items: 0, max_items: 999999, markup_flat: 0, markup_percent: 0, markup_per_item: 0, markup_per_weight: 0 }] }
